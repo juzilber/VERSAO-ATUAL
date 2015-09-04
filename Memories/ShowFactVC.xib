@@ -20,8 +20,8 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BLT-4D-agJ">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="26" translatesAutoresizingMaskIntoConstraints="NO" id="Pca-J1-JGY">
-                    <rect key="frame" x="0.0" y="54" width="600" height="546"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="26" translatesAutoresizingMaskIntoConstraints="NO" id="Pca-J1-JGY">
+                    <rect key="frame" x="8" y="63" width="600" height="542"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
@@ -43,14 +43,18 @@
                 </constraint>
                 <constraint firstItem="BLT-4D-agJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Di-yd-bXN"/>
                 <constraint firstItem="BLT-4D-agJ" firstAttribute="top" secondItem="3yi-bh-EYy" secondAttribute="bottom" constant="-38" id="8d9-BR-b67"/>
+                <constraint firstAttribute="trailing" secondItem="Pca-J1-JGY" secondAttribute="trailing" id="8m3-pX-BIG"/>
+                <constraint firstItem="Pca-J1-JGY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="58" id="Kqs-ht-Nqp"/>
                 <constraint firstItem="BLT-4D-agJ" firstAttribute="centerX" secondItem="Pca-J1-JGY" secondAttribute="centerX" id="NX3-An-jao"/>
                 <constraint firstAttribute="bottom" secondItem="BLT-4D-agJ" secondAttribute="bottom" constant="-15" id="PL6-sb-3P6"/>
+                <constraint firstItem="Pca-J1-JGY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UT1-Nl-84h"/>
                 <constraint firstAttribute="trailing" secondItem="BLT-4D-agJ" secondAttribute="trailing" id="VoT-hO-SP1"/>
                 <constraint firstItem="Pca-J1-JGY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="W5L-M6-68d"/>
                 <constraint firstItem="Pca-J1-JGY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="26" id="dzX-WS-Rd9">
                     <variation key="widthClass=compact" constant="38"/>
                 </constraint>
                 <constraint firstItem="BLT-4D-agJ" firstAttribute="leading" secondItem="3yi-bh-EYy" secondAttribute="trailing" constant="-60" id="ff8-ce-Nro"/>
+                <constraint firstAttribute="bottom" secondItem="Pca-J1-JGY" secondAttribute="bottom" id="rLz-hb-w7p"/>
                 <constraint firstItem="BLT-4D-agJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yim-Jx-uyu"/>
             </constraints>
             <variation key="default">
@@ -96,7 +100,7 @@
                     <include reference="ff8-ce-Nro"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="292" y="202"/>
+            <point key="canvasLocation" x="424" y="310"/>
         </view>
     </objects>
     <resources>

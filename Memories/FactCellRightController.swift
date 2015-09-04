@@ -6,6 +6,10 @@
 //  Copyright (c) 2015 Juliana Zilberberg. All rights reserved.
 //
 
+
+
+//CÉLULA APAGADA
+
 import UIKit
 
 class FactCellRightController: UITableViewCell {
