@@ -14,6 +14,8 @@ class ShowSummaryVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     var sectionTitleArray : NSMutableArray = NSMutableArray()
     var sectionContentDict : NSMutableDictionary = NSMutableDictionary()
     var arrayForBool : NSMutableArray = NSMutableArray()
+    
+    var familiesData : [Family]!;
 
     
     @IBOutlet var tableView: UITableView!
@@ -25,7 +27,8 @@ class ShowSummaryVC: UIViewController, UICollectionViewDelegate, UICollectionVie
         super.viewDidLoad()
         
       
-
+        
+        
         // Do any additional setup after loading the view.
     
         arrayForBool = ["0","0"]
@@ -159,7 +162,7 @@ class ShowSummaryVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     
     //Implements CollectionView
      func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return familiesData.count;
     }
     
     
@@ -168,11 +171,17 @@ class ShowSummaryVC: UIViewController, UICollectionViewDelegate, UICollectionVie
      func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let collCell: SummaryCollectionCell = collectionView.dequeueReusableCellWithReuseIdentifier("collCell", forIndexPath: indexPath) as! SummaryCollectionCell
         
-        var cellImg = collCell.viewWithTag(1) as! UIImageView
+        var cellImg = collCell.viewWithTag(1) as! UIImageView;
+        
+        collCell.summaryImgCell.image = UIImage(contentsOfFile: familiesData[indexPath.row].photo);
+        collCell.descriptionLbl.text = familiesData[indexPath.row].subtitle;
+        
+        /*var cellImg = collCell.viewWithTag(1) as! UIImageView
         
         collCell.summaryImgCell.image = UIImage(named: "bird")
         
         collCell.descriptionLbl.text = "text"
+        */
         
 //        collCell.backgroundColor
         
@@ -190,6 +199,12 @@ class ShowSummaryVC: UIViewController, UICollectionViewDelegate, UICollectionVie
         
         return collCell
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        let dao = DAOFamily();
+        familiesData = dao.getDataArray();
+        collectionView.reloadData();
     }
 
     

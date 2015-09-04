@@ -146,17 +146,14 @@ class RegisterFamilyVC: UIViewController, UIImagePickerControllerDelegate, UITex
         
         family.connection = connetionTxt.text
         family.subtitle = nameTxt.text
+        let img = familyImg.image;
         
         var daoFamily = DAOFamily()
-        
-//        daoFamily.getDataById(family, id: )
-//        daoFamily.saveData(family, photo: )
-        
-        //, photos: familyImg.image!)
+        daoFamily.saveNewFamily(family, photo: img!);
         
         let summaryVC = ShowSummaryVC(nibName: "ShowSummaryC", bundle: nil)
-        presentViewController(ShowSummaryVC(), animated: true, completion: nil)
-        
+        //presentViewController(summaryVC, animated: true, completion: nil)
+        dismissViewControllerAnimated(true, completion: nil);
     }
 
     
@@ -164,8 +161,8 @@ class RegisterFamilyVC: UIViewController, UIImagePickerControllerDelegate, UITex
     
         let view = ShowSummaryVC(nibName: "ShowSummaryVC", bundle: nil)
         
-        
-        presentViewController(view, animated: true, completion: nil)
+        dismissViewControllerAnimated(true, completion: nil);
+        //presentViewController(view, animated: true, completion: nil)
     
     
     }

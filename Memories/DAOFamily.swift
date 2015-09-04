@@ -39,7 +39,7 @@ class DAOFamily{
         
         let fileManager = NSFileManager.defaultManager();
         
-        if(fileManager.fileExistsAtPath(familyPathDoc)){
+        if(fileManager.fileExistsAtPath(familyPath)){
             
             contents = NSMutableArray(contentsOfFile: familyPath);
         }
@@ -55,10 +55,11 @@ class DAOFamily{
     
     private func createDict(){
         
-        contents = NSMutableArray(contentsOfFile: familyPath);
+        contents = NSMutableArray();
         //var dict = contents[0] as! NSMutableDictionary
         //dict["subtitle"] = "NAda que preste"
         contents.writeToFile(familyPath, atomically: true);
+        println("HFRIGIWRGWQJPR");
         
     }
     //inicializa a classe
@@ -87,32 +88,10 @@ class DAOFamily{
     func saveNewFamily(family : Family, photo : UIImage){
         
         let imgName = saveDataImgToPath(photo);
-        let fDict = NSDictionary(objects: [family.subtitle, imgName, family.connection, family.audio!], forKeys: ["nome","photo","connection","audio"]);
+        let fDict = NSDictionary(objects: [family.subtitle, imgName, family.connection, ""], forKeys: ["nome","photo","connection","audio"]);
         
         contents.addObject(fDict);
         contents.writeToFile(familyPath, atomically: true);
-        
-    }
-    
-    func saveDataArray(families: [Family], photo: UIImage )
-    {
-         var save = NSMutableArray() //structure to save
-        var familyDict  = [String : String]()
-        
-        for family in families
-        {
-            familyDict["nome"] = family.subtitle;
-            familyDict["connection"] = family.connection;
-            save.addObject(familyDict)
-            
-//            if (!(photo as! String).isEmpty) {
-//                var pImg: String = familyPathDoc.stringByAppendingPathComponent(photo["photo"] as! String);
-//                family.photo = pImg;
-//            }
-        }
-        
-        save.writeToFile(familyPath, atomically: true)
-        
         
     }
     
@@ -138,6 +117,4 @@ class DAOFamily{
         }
         return false;
     }
-
-
 }
