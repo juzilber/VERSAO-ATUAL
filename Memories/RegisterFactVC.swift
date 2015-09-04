@@ -51,7 +51,19 @@ class RegisterFactVC: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.allowsSelection = false
         tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
+        //cria gesture pra tocar na tableView e esconder o datePicker
+        let tapGesture2 = UITapGestureRecognizer(target: self, action: Selector("hideKeyboard2"))
+        tapGesture2.cancelsTouchesInView = true
+        tableView.addGestureRecognizer(tapGesture2)
+        
     }
+    
+    //esconde o keyboard quando toca na tableView
+    func hideKeyboard2() {
+        
+        tableView.endEditing(true)
+    }
+
     
     //Define 3 células por página
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int

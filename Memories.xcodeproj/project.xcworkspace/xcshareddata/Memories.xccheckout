@@ -7,34 +7,34 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9E223626-FE11-48B6-A66B-B7060CF4EC06</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Memories</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4C69404AF7B3FEC7A4AC42A6543B4128B300C14A</key>
-		<string>https://github.com/juzilber/Memories.git</string>
+		<key>94D66B886F25094C373F4C28C50B489B490040DD</key>
+		<string>https://github.com/juzilber/VERSAO-ATUAL.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Memories.xcodeproj/project.xcworkspace</string>
+	<string>Memories.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4C69404AF7B3FEC7A4AC42A6543B4128B300C14A</key>
+		<key>94D66B886F25094C373F4C28C50B489B490040DD</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/juzilber/Memories.git</string>
+	<string>https://github.com/juzilber/VERSAO-ATUAL.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4C69404AF7B3FEC7A4AC42A6543B4128B300C14A</string>
+	<string>94D66B886F25094C373F4C28C50B489B490040DD</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4C69404AF7B3FEC7A4AC42A6543B4128B300C14A</string>
+			<string>94D66B886F25094C373F4C28C50B489B490040DD</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Memories</string>
+			<string>VERSAO-ATUAL</string>
 		</dict>
 	</array>
 </dict>
