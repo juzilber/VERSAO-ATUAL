@@ -56,8 +56,8 @@ class DAOFamily{
     private func createDict(){
         
         contents = NSMutableArray(contentsOfFile: familyPath);
-        var dict = contents[0] as! NSMutableDictionary
-        dict["subtitle"] = "NAda que preste"
+        //var dict = contents[0] as! NSMutableDictionary
+        //dict["subtitle"] = "NAda que preste"
         contents.writeToFile(familyPath, atomically: true);
         
     }
@@ -82,7 +82,18 @@ class DAOFamily{
             
         }
         return families
-}
+    }
+    
+    func saveNewFamily(family : Family, photo : UIImage){
+        
+        let imgName = saveDataImgToPath(photo);
+        let fDict = NSDictionary(objects: [family.subtitle, imgName, family.connection, family.audio!], forKeys: ["nome","photo","connection","audio"]);
+        
+        contents.addObject(fDict);
+        contents.writeToFile(familyPath, atomically: true);
+        
+    }
+    
     func saveDataArray(families: [Family], photo: UIImage )
     {
          var save = NSMutableArray() //structure to save
@@ -104,5 +115,29 @@ class DAOFamily{
         
         
     }
+    
+    private func saveDataImgToPath(img : UIImage) -> String{
+        
+        let fileManager = NSFileManager.defaultManager();
+        var nIndex = Int(0);
+        let existingImages = fileManager.contentsOfDirectoryAtPath(familyPathDoc, error: nil) as! [String];
+        var str = "\(nIndex).png"
+        while(exists(str, vec: existingImages)){
+            nIndex++;
+            str = "\(nIndex).png"
+        }
+        UIImagePNGRepresentation(img).writeToFile(familyPathDoc+"/"+str, atomically: true);
+        return str;
+    }
+    
+    func exists(str : String, vec : [String]) -> Bool{
+        for v in vec{
+            if(str == v){
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }

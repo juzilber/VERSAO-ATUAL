@@ -135,7 +135,8 @@ class RegisterCoverVC:UIViewController, UIImagePickerControllerDelegate, UINavig
         daoCover.saveData(cover, imageProfile: imageView.image!, imageBackground: buttonTeste2.imageView!.image)
        
         let coverVC = CoverVC(nibName: "CoverVC", bundle: nil)
-        presentViewController(coverVC, animated: true, completion: nil)
+        
+        toCoverScreen(coverVC);
 
     }
     
@@ -146,8 +147,22 @@ class RegisterCoverVC:UIViewController, UIImagePickerControllerDelegate, UINavig
         let cover = CoverVC(nibName: "CoverVC", bundle: nil)
         
         //cover.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
-        presentViewController(cover, animated: true, completion: nil)
+        toCoverScreen(cover);
         
+    }
+    
+    private func toCoverScreen(vc : UIViewController){
+        if let p = presentingViewController{
+            if(p.isKindOfClass(CoverVC)){
+                dismissViewControllerAnimated(true, completion: nil);
+            }
+            else{
+                presentViewController(vc, animated: true, completion: nil)
+            }
+        }
+        else{
+            presentViewController(vc, animated: true, completion: nil)
+        }
     }
     
     //botao para acessar a troca de imagem de capa
