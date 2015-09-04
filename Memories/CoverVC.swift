@@ -64,7 +64,7 @@ class CoverVC: UIViewController {
         var controller: RegisterCoverVC = RegisterCoverVC(nibName:"RegisterCoverVC", bundle:NSBundle.mainBundle())
         
         
-        self.presentViewController(controller, animated: true, completion: nil)
+        self.presentViewController(controller, animated: false, completion: nil)
     }
     
    
@@ -72,7 +72,7 @@ class CoverVC: UIViewController {
         
         let ssVC = ShowSummaryVC(nibName: "ShowSummaryVC", bundle: nil)
     
-        ssVC.modalTransitionStyle = UIModalTransitionStyle.PartialCurl
+        ssVC.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
     presentViewController(ssVC, animated: true, completion: nil)
     }
     
