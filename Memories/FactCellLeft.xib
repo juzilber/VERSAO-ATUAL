@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="Comme-Medium.ttf">
-            <string>Comme-Medium</string>
-        </mutableArray>
         <mutableArray key="Lavanderia Regular.otf">
             <string>Lavanderia-Regular</string>
         </mutableArray>
@@ -21,62 +18,57 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hF6-jj-0li" id="hCc-NH-9OO">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X XXX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXM-T6-Vnb">
-                        <rect key="frame" x="236" y="0.0" width="1800" height="55"/>
-                        <fontDescription key="fontDescription" name="Lavanderia-Regular" family="Lavanderia" pointSize="30"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kNh-Ay-2Zs">
-                        <rect key="frame" x="8" y="12" width="220" height="180"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="era uma vez um lugarzinho no meio do nada com sabor de chocolate" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUN-uL-8u6">
-                        <rect key="frame" x="236" y="56" width="156" height="106"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" name="Comme-Medium" family="Comme" pointSize="16"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylA-aK-FeW">
-                        <rect key="frame" x="362" y="165" width="30" height="30"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white" translatesAutoresizingMaskIntoConstraints="NO" id="Co8-ra-SRC">
+                        <rect key="frame" x="-145" y="-43" width="555" height="256"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="KTw-Oe-wY8"/>
-                            <constraint firstAttribute="width" constant="30" id="ihm-Ym-PqD"/>
+                            <constraint firstAttribute="width" constant="555" id="rm5-DL-VaH"/>
                         </constraints>
-                        <state key="normal" title="PLAY" image="player2.png">
-                            <color key="titleColor" red="1" green="0.89019607840000003" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                    </button>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kNh-Ay-2Zs">
+                        <rect key="frame" x="22" y="13" width="356" height="140"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tpm-im-evR">
+                        <rect key="frame" x="15" y="8" width="370" height="151"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X XXX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXM-T6-Vnb">
+                        <rect key="frame" x="140" y="167" width="106" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="106" id="F3Z-dd-dpI"/>
+                            <constraint firstAttribute="height" constant="30" id="zQf-G0-F1B"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lavanderia-Regular" family="Lavanderia" pointSize="23"/>
+                        <color key="textColor" red="0.25490196079999999" green="0.31372549020000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
-                <color key="backgroundColor" red="0.6705882353" green="0.7843137255" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="QUN-uL-8u6" firstAttribute="centerX" secondItem="ylA-aK-FeW" secondAttribute="centerX" constant="-63" id="2rk-kL-Glh"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="kNh-Ay-2Zs" secondAttribute="bottom" constant="3" id="7pa-dT-p4V"/>
-                    <constraint firstItem="QUN-uL-8u6" firstAttribute="centerY" secondItem="hCc-NH-9OO" secondAttribute="centerY" constant="7.5" id="9RM-JI-z9T"/>
-                    <constraint firstItem="kNh-Ay-2Zs" firstAttribute="top" secondItem="hCc-NH-9OO" secondAttribute="topMargin" constant="4" id="Adz-X6-agN"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="ylA-aK-FeW" secondAttribute="bottom" id="D1T-xH-nmN"/>
-                    <constraint firstItem="HXM-T6-Vnb" firstAttribute="leading" secondItem="kNh-Ay-2Zs" secondAttribute="trailing" constant="8" symbolic="YES" id="D53-3n-MFq"/>
-                    <constraint firstItem="QUN-uL-8u6" firstAttribute="trailing" secondItem="HXM-T6-Vnb" secondAttribute="trailing" constant="-1644" id="KN6-yc-aie"/>
-                    <constraint firstItem="kNh-Ay-2Zs" firstAttribute="leading" secondItem="hCc-NH-9OO" secondAttribute="leadingMargin" id="Q76-6c-old"/>
-                    <constraint firstItem="ylA-aK-FeW" firstAttribute="top" secondItem="QUN-uL-8u6" secondAttribute="bottom" constant="3" id="QOX-Ub-YTT"/>
-                    <constraint firstItem="HXM-T6-Vnb" firstAttribute="top" secondItem="hCc-NH-9OO" secondAttribute="top" id="Sk3-ML-nEe"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="HXM-T6-Vnb" secondAttribute="trailing" constant="-1644" id="TZL-LP-irX"/>
-                    <constraint firstItem="QUN-uL-8u6" firstAttribute="leading" secondItem="HXM-T6-Vnb" secondAttribute="leading" id="bRu-lM-2Ct"/>
-                    <constraint firstItem="ylA-aK-FeW" firstAttribute="leading" secondItem="kNh-Ay-2Zs" secondAttribute="trailing" constant="134" id="jFs-vZ-MqI"/>
-                    <constraint firstItem="QUN-uL-8u6" firstAttribute="top" secondItem="HXM-T6-Vnb" secondAttribute="bottom" constant="1" id="vEF-So-DxG"/>
+                    <constraint firstItem="HXM-T6-Vnb" firstAttribute="leading" secondItem="hCc-NH-9OO" secondAttribute="leadingMargin" constant="132" id="0sA-dm-ce0"/>
+                    <constraint firstItem="Tpm-im-evR" firstAttribute="top" secondItem="hCc-NH-9OO" secondAttribute="topMargin" id="ETa-db-J3n"/>
+                    <constraint firstItem="Tpm-im-evR" firstAttribute="trailing" secondItem="hCc-NH-9OO" secondAttribute="trailingMargin" constant="-7" id="IVE-dt-kMS"/>
+                    <constraint firstItem="HXM-T6-Vnb" firstAttribute="top" secondItem="Tpm-im-evR" secondAttribute="bottom" constant="8" id="KxV-9S-1Mn"/>
+                    <constraint firstItem="HXM-T6-Vnb" firstAttribute="top" secondItem="kNh-Ay-2Zs" secondAttribute="bottom" constant="14" id="M6w-72-eIa"/>
+                    <constraint firstItem="Tpm-im-evR" firstAttribute="centerX" secondItem="kNh-Ay-2Zs" secondAttribute="centerX" id="OVV-O4-hBP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HXM-T6-Vnb" secondAttribute="bottom" constant="-1" id="PeP-sb-qV7"/>
+                    <constraint firstItem="Tpm-im-evR" firstAttribute="leading" secondItem="hCc-NH-9OO" secondAttribute="leadingMargin" constant="7" id="bee-hj-Usn"/>
+                    <constraint firstItem="Tpm-im-evR" firstAttribute="top" secondItem="kNh-Ay-2Zs" secondAttribute="top" constant="-5" id="fcP-Wt-ZZC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Tpm-im-evR" secondAttribute="bottom" constant="36.5" id="gUR-tB-pVp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Co8-ra-SRC" secondAttribute="trailing" constant="-18" id="hEi-pM-RtN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="HXM-T6-Vnb" secondAttribute="trailing" constant="146" id="vMG-XF-Q05"/>
+                    <constraint firstItem="Co8-ra-SRC" firstAttribute="top" secondItem="hCc-NH-9OO" secondAttribute="topMargin" constant="-51" id="wML-s1-6JS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Co8-ra-SRC" secondAttribute="bottom" constant="-17.5" id="wsn-bZ-GZh"/>
+                    <constraint firstItem="kNh-Ay-2Zs" firstAttribute="leading" secondItem="hCc-NH-9OO" secondAttribute="leadingMargin" constant="14" id="yTG-hv-KOY"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="audioButton" destination="ylA-aK-FeW" id="7TX-nn-un0"/>
                 <outlet property="dateLabel" destination="HXM-T6-Vnb" id="V1I-oy-gcj"/>
                 <outlet property="photoView" destination="kNh-Ay-2Zs" id="4xi-R8-bhu"/>
-                <outlet property="subtitleLabel" destination="QUN-uL-8u6" id="8bp-I7-4hC"/>
             </connections>
             <point key="canvasLocation" x="953" y="553"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="player2.png" width="50" height="50"/>
+        <image name="Rectangle.png" width="658" height="512"/>
+        <image name="white" width="3888" height="2592"/>
     </resources>
 </document>

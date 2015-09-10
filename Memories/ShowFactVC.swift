@@ -66,7 +66,7 @@ class ShowFactVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         var cell:FactCellLeftController!
         cell = tableView.dequeueReusableCellWithIdentifier("CellLeft", forIndexPath: indexPath) as! FactCellLeftController
         cell.dateLabel.text = "0 jan 00"
-        cell.subtitleLabel.text = "meu primo henrique olha como o sorriso dele é bonito ele é tao feliz"
+        //cell.subtitleLabel.text = "meu primo henrique olha como o sorriso dele é bonito ele é tao feliz"
         var photo:UIImage = UIImage(named: "\(id)")!
         cell.photoView.image = photo
 

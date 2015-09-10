@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9E223626-FE11-48B6-A66B-B7060CF4EC06</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Memories</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>94D66B886F25094C373F4C28C50B489B490040DD</key>
 		<string>https://github.com/juzilber/VERSAO-ATUAL.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Memories.xcodeproj/project.xcworkspace</string>
+	<string>Memories.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>94D66B886F25094C373F4C28C50B489B490040DD</key>
